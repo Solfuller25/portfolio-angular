@@ -1,0 +1,32 @@
+<div class="container">
+    <app-navbar></app-navbar>
+    <div class="contacts-content">
+        <section class="contact">
+            <div>
+                <h1>Send Me An Email Below!</h1>
+                <form class="contact" id="contact-form" (submit)="sendEmail($event)">
+                    <input type="hidden" name="contact_number" value="697483">
+                    <!-- Name -->
+                    <label for="user_name">Name</label>
+                    <input type="text" id="user_name" placeholder="Your name..." name="user_name" required />
+                    <!-- Email -->
+                    <label for="user_email">Email</label>
+                    <input type="email" id="user_email" name="user_email" placeholder="example@gmail.com" required>
+                    <!-- Message -->
+                    <label for="message">Message</label>
+                    <textarea name="user_message" id="message" placeholder="Your message..." required></textarea>
+                    <!-- Submit Button -->
+                    <button id="sendEmail" type="submit">{{sendEmailButton}}</button>
+                </form>
+            </div>
+        </section>
+        <!--<input type="text" id="emailName" placeholder="Full Name">
+        <textarea id="emailBody" cols="40" rows="10" placeholder="message..."></textarea>
+        <a id="sendEmail" class="button content-button">Submit</a>-->
+        <h1>Or Find Me On <a id="LinkedInLink" class="text-link" target="_blank" href="https://www.linkedin.com/in/solomon-fuller/">LinkedIn</a></h1>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" 
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" 
+    crossorigin="anonymous"></script>
+<script src="../js/contact.js"></script>
