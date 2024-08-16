@@ -16,7 +16,7 @@ body {
 }
 
 .contacts-content {
-    background-color: #95BDE1;
+    background-color: #5FA8D3;
     height:90%;
     width:90%;
     display: flex;
@@ -35,11 +35,7 @@ body {
 }
 
 .contact div {
-    background: #6a9dc9;
-    border: 2px solid black;
     padding: 2.5em;
-    border-radius: 10px;
-    box-shadow: 0 0 2em rgba(0, 0, 0, 0.3);
     width: 40vw;
 }
 
