@@ -4,34 +4,18 @@
         <h1>Projects</h1>
         <hr>
         <div id="projects-list">
-            <div class="project" name="project1">
-                <a id="twitterLink" target="_blank" href="https://github.com/fasttrackd-student-work/spring-assessment-social-media-apr-2024-team-1"><h3>Twitter API</h3></a>
-                <div class="project-description">
-                    A RESTful Web Service to mimic the popular social media site known as Twitter, or X. 
-                    This project was built in Java using the SpringBoot framework to implement various endpoints 
-                    that could be used to create and delete, as well as reply to tweets and other functionality.
-                </div>
-                <span class="tech-environment-header">
-                    Environment
-                </span>
-                <div class="tech-environment">
-                    Java, SpringBoot, JPA, PostgreSQL, PGAdmin, Postman, Git, Eclipse, Maven
-                </div>
-            </div>
-            <div class="project" name="project2">
-                <a id="roverLink" target="_blank" href="https://github.com/Solfuller25/MarsRover"><h3>Mars Rover</h3></a>
-                <div class="project-description">
-                    My solution to a coding challenge to create a command line interface that emulates communications between a 
-                    remote user and a rover landing on a isolated plateau on Mars. The user can provide various commands to 
-                    navigate the Mars Rover, and the software will provide heading and location details back to the user.
-                </div>
-                <span class="tech-environment-header">
-                    Environment
-                </span>
-                <div class="tech-environment">
-                    C#, Visual Studio
-                </div>
-            </div>
+            <app-project 
+                [projectName]="'Twitter API'" 
+                [url]="'https://github.com/Solfuller25/spring-twitter-project'"
+                [projectDescription]="'A RESTful Web Service to mimic the popular social media site known as Twitter, or X. This project was built in Java using the SpringBoot framework to implement various endpoints that could be used to create and delete, as well as reply to tweets and other functionality.'"
+                [techEnvironment]="'Java, SpringBoot, JPA, PostgreSQL, PGAdmin, Postman, Git, Eclipse, Maven'"
+            ></app-project>
+            <app-project
+                [projectName]="'Mars Rover'"
+                [url]="'https://github.com/Solfuller25/MarsRover'"
+                [projectDescription]="'My solution to a coding challenge to create a command line interface that emulates communications between a remote user and a rover landing on a isolated plateau on Mars. The user can provide various commands to navigate the Mars Rover, and the software will provide heading and location details back to the user.'"
+                [techEnvironment]="'C#, Visual Studio'"
+            ></app-project>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" 
