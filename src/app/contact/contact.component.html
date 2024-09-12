@@ -4,11 +4,11 @@
         <section class="contact">
             <div>
                 <h1>Send Me An Email Below!</h1>
-                <form class="contact" id="contact-form" (submit)="sendEmail($event)">
+                <form class="contact" id="contact-form" (ngSubmit)="sendEmail($event)">
                     <input type="hidden" name="contact_number" value="697483">
                     <!-- Name -->
                     <label for="user_name">Name</label>
-                    <input type="text" id="user_name" placeholder="Your name..." name="user_name" required />
+                    <input type="text" id="user_name" name="user_name" placeholder="Your name..." required />
                     <!-- Email -->
                     <label for="user_email">Email</label>
                     <input type="email" id="user_email" name="user_email" placeholder="example@gmail.com" required>
@@ -16,13 +16,10 @@
                     <label for="message">Message</label>
                     <textarea name="user_message" id="message" placeholder="Your message..." required></textarea>
                     <!-- Submit Button -->
-                    <button id="sendEmail" type="submit">{{sendEmailButton}}</button>
+                    <a class="button content-button" id="sendEmail" type="submit">{{sendEmailButton}}</a>
                 </form>
             </div>
         </section>
-        <!--<input type="text" id="emailName" placeholder="Full Name">
-        <textarea id="emailBody" cols="40" rows="10" placeholder="message..."></textarea>
-        <a id="sendEmail" class="button content-button">Submit</a>-->
         <h1>Or Find Me On <a id="LinkedInLink" class="text-link" target="_blank" href="https://www.linkedin.com/in/solomon-fuller/">LinkedIn</a></h1>
     </div>
 </div>

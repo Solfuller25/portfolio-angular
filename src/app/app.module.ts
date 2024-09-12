@@ -9,6 +9,7 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { LinkButtonComponent } from './Components/link-button/link-button.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectComponent } from './projects/project/project.component';
+import { CareerComponent } from './career/career.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProjectComponent } from './projects/project/project.component';
     NavbarComponent,
     LinkButtonComponent,
     ProjectsComponent,
-    ProjectComponent
+    ProjectComponent,
+    CareerComponent
   ],
   imports: [
     BrowserModule,

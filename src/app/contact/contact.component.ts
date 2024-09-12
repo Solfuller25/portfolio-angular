@@ -7,8 +7,8 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
-
-  /*contactForm = document.querySelector('#contact-form');
+/*
+  contactForm = document.querySelector('#contact-form');
   submitBtn = document.querySelector('#sendEmail');
   nameInput = document.querySelector('#user_name');
   emailInput = document.querySelector('#user_email');
@@ -24,7 +24,15 @@ export class ContactComponent {
 
   //, { publicKey: this.publicKey }
   sendEmail(e: Event) {
+
+    console.log("Sending email");
+    console.log(e.target as HTMLFormElement);
+
     this.sendEmailButton = 'Sending...';
+
+    // Initialize email JS with public key
+    emailjs.init(this.publicKey);
+
     // Send the email
     emailjs.sendForm(this.serviceID, this.templateID, e.target as HTMLFormElement, { publicKey: this.publicKey })
       .then(() => {
@@ -37,7 +45,5 @@ export class ContactComponent {
   }
 
   ngOnInit(): void { 
-    // Initialize email JS with public key
-    emailjs.init({ publicKey: "-zUotUEnavSQ_mI4f", });
   }  
 }
